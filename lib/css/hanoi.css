@@ -1,0 +1,72 @@
+html, body, section, div, h1 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  background: transparent;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.hanoi-towers{
+  border: 2px solid black;
+  width: 762px;
+  margin: 0 auto;
+}
+
+.tower {
+  float: left;
+  width: 250px;
+  border: 2px solid black;
+}
+
+.tower:hover:not(.game-over) {
+  background: yellow;
+  cursor: pointer;
+}
+
+.from-tower {
+  background: red;
+}
+
+.winning-tower {
+  background: green;
+}
+
+.no-disc, .small-disc, .medium-disc, .large-disc {
+  height: 50px;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.no-disc {
+  width: 0;
+}
+
+.small-disc {
+  width: 50px;
+}
+
+.medium-disc {
+  width: 150px;
+}
+
+.large-disc {
+  width: 250px;
+}
